@@ -1,0 +1,5 @@
+vim.cmd("source ~/.config/nvim/vim-plug/plugins.vim")
+require("keybinds")
+require("settings")
+require("cleanup")
+require("ibl").setup()
