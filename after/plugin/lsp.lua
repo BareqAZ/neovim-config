@@ -56,11 +56,14 @@ cmp.setup({
     { name = 'buffer' },
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'orgmode' },
   },
+
+  preselect = cmp.PreselectMode.Item,
 
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
-    ['<CR>'] = cmp.mapping.confirm({select = false}),
+    ['<CR>'] = cmp.mapping.confirm({select = true}),
 
     -- Ctrl+Space to trigger completion menu
     ['<C-Space>'] = cmp.mapping.complete(),
